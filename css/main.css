@@ -1,0 +1,559 @@
+html{
+    box-sizing: border-box;
+   }
+   
+   *, *:before, *:after{
+    box-sizing: inherit;
+   }
+
+
+
+header, body, main, ul, footer, h1{
+    margin:0px;
+    padding:0px;
+}
+
+
+header, body, main, footer{
+    min-width:350px;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: 'Inconsolata', monospace;
+    font-size:16px;
+}
+
+main, header, footer{
+    background-color: #ffffff ;
+}
+
+body{
+    background-color: aliceblue;
+    padding:10px;
+}
+
+
+/********************Logo*******************/
+#logoImgBox{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:5px;
+}
+
+#welcomeInfo
+{
+    text-align: right;
+    padding: 5px;
+    margin-top: 20px;
+}
+
+#welcomeInfo p {
+    display:inline-block;
+}
+
+#adminLink, #searchLink{
+    text-decoration: none;
+    color:black;
+}
+
+#accountLink, #accountNews{
+    justify-self:right;
+    align-self: center;
+    text-decoration: none;
+    color:black;
+    padding:10px;
+    
+} 
+
+#accountLink:hover, #adminLink:hover, #accountNews:hover, #searchLink:hover{
+    color:#236cac;
+}
+
+/********************Navigation*******************/
+nav{
+    background-color: #525252;
+}
+nav a{
+    display:block;
+    text-decoration: none;
+    color: white;
+    padding:7px;
+    text-align:center;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color:white;
+    background-color: #4c96d7;
+}
+
+#navigation{
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+/********************Main Section*******************/
+#welcomeHeading{
+    margin-bottom:35px ;
+}
+
+
+
+h1, h2{
+    padding:5px;
+}
+
+
+#welcomeBox{
+    margin-top: 40px;
+    position:relative;
+    text-align: center;
+}
+
+#bfCar{
+    width:100%;
+}
+
+#welcomeBoxInfo{
+    color:#236cac;
+    line-height: 5px;
+    padding:10px;
+    position:absolute;
+    top:190px;
+}
+
+#actionPicBox{
+    text-align: center;
+}
+
+#actionPic{
+    padding:25px;
+    width:200px;
+    justify-self: center;
+}
+
+#aboutSection{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:10px;
+}
+
+#reviewBox{
+    padding:10px;
+}
+
+#reviewsList{
+    line-height: 40px;
+    padding:5px;
+    margin-left: 20px;
+}
+
+
+#cardsBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap:10px;
+    padding:10px;
+}
+
+#upgradeBox1, #upgradeBox2, #upgradeBox3, #upgradeBox4{
+    text-align: center;
+}
+.boxDesign{
+    padding:30px;
+    border:2px #3a3a3a solid;
+    background-color: #4c96d7;
+}
+
+#flameImg{
+    height:65px;
+}
+
+#capImg{
+    height:58px;
+}
+
+footer{
+    text-align: center;
+    border-top: 5px solid #3a3a3a;
+    padding:15px;
+}
+
+.errorP{
+    padding:10px;
+    margin:0px;
+}
+
+/****************FORMS*********************/
+
+.passwordInfo
+{
+    max-width: 254px;
+    margin-left: 37px;
+}
+
+.formBox{
+    display:block;
+    text-align: center;
+    padding:30px;
+}
+
+
+form{
+    display:inline-block;
+}
+
+
+form label, form textarea{
+    display:block;
+    text-align:left;
+    padding:10px;
+    font-size: 20px;
+}
+
+form label input, form label textarea{
+
+    border:solid 1px black;
+    border-radius: 5px;
+    padding:8px;
+    width:100%;
+    max-width:20rem;
+}
+
+.submit{
+    border:solid 1px black;
+    border-radius: 10px;
+    padding:10px;
+    margin-top:10px;
+    background-color: #236cac;
+    color:#ffffff;
+    font-size:18px;
+}
+
+.submit:hover{
+    color:black;
+    background-color: #4c96d7;
+}
+
+#signUpLine{
+    font-size:18px;
+    padding:5px;
+}
+
+.formBox #signUpBtn{
+    font-size:20px;
+    text-decoration: none;
+    color:black;
+}
+.formBox #signUpBtn:hover{
+    color:#236cac;
+}
+
+form label input:required:invalid, form label textarea:required:invalid{
+    border:solid 1px rgb(253, 103, 103);
+}
+form label input:required:valid, form label textarea:required:valid {
+    border:solid 1px green;
+}
+
+/************VEHICLE MANAGEMENT PAGE*******************/
+#vehLinkBox
+{
+    text-align: center;
+}
+
+.vehBtns{
+    font-size: 18px;
+    display:block;
+    padding:10px;
+    text-decoration: none;
+    color:black;
+}
+
+.vehBtns:hover{
+    color:#236cac;
+}
+
+#inventoryDisplay{
+    margin: 0 auto;
+}
+
+.tableLinks{
+    color:black;
+    text-decoration: none;
+    padding:5px;
+}
+
+.tableLinks:hover{
+    color:#236cac;
+}
+
+
+/********************ADMIN PAGE*************************/
+#adminPara, #editAccountsLink
+{
+    padding: 10px;
+    margin: 0;
+}
+
+#adminHead
+{
+    padding:0px;
+    margin:0;
+}
+
+#addVehLink
+{
+    text-decoration: none;
+    color:black;
+}
+
+#addVehLink:hover
+{
+    color: #4c96d7;
+}
+
+#userAdminBox
+{
+    padding: 20px;
+}
+
+#userAdminInfoList
+{
+    font-size: 25px;
+    line-height: 25px;
+    padding:10px;
+}
+
+.notice{
+    margin:0;
+    padding:15px;
+    color: red;
+    font-weight: bold;
+}
+
+
+/*************Inventory Pages*************/
+#inv-display{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+   }
+   
+   #inv-display li{
+    margin-bottom: .5em;
+    border: 1px #ccc solid;
+    list-style-type: none;
+    flex: 1 1 auto;
+   }
+   
+   #inv-display li img {
+       max-width: 100%;
+   }
+
+   #inv-display a{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color:black;
+   }
+
+   #inv-display a:hover
+{
+    color: #4c96d7;
+}
+
+#inv-display h2{
+    padding:0px;
+}
+
+#vehDescriptionHeading{
+    text-align: center;
+}
+
+#vehicleDisplayBox{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:10px;
+}
+
+#vehicleImageBox{
+    justify-self: center;
+    padding:10px;
+}
+#vehicleImageBox img {
+    width: 300px;
+}
+
+#vehicleDetailsBox{
+    padding:10px;
+}
+
+
+/*******************************Search Page******************************/
+#searchForm
+{
+    display: block;
+    padding:10px;
+}
+
+#searchValue
+{
+    display:block;
+}
+
+form label #searchValue{
+    width:75%;
+    padding:5px;
+}
+
+#searchBtn{
+    border:solid 1px black;
+    border-radius: 5px;
+    padding:10px;
+    margin-top:10px;
+    background-color: #236cac;
+    color:#ffffff;
+    font-size:18px;
+}
+
+#searchDisplay{
+    padding:20px;
+    list-style-type: none;
+}
+
+#pageNum{
+    list-style-type: none;
+    text-align: center;
+}
+
+#pageNum li{
+    display:inline;
+    padding: 5px;
+}
+
+#pageNum li a:hover{
+    color:red;
+}
+
+@media screen and (min-width: 760px) {
+    nav a{
+        padding:15px;
+    }
+
+    body{
+        background-image: url(../images/site/checkerboard.jpg);
+        background-repeat: repeat;
+    }
+
+    #bodyContainer{
+        border:3px solid #4c96d7;
+    }
+    #welcomeBoxInfo{
+        padding:10px;
+        top:190px;
+        left:40px;
+    }
+
+    #bfCar{
+        width:80%;
+    }
+
+    
+    #aboutSection{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #cardsBox{
+        grid-column: 1/2;
+        grid-row:1/2;
+    }
+
+    #actionPicBox{
+        position:absolute;
+        top:275px;
+        left:20px;
+    }
+
+    #actionPic{
+        width:170px;
+    }
+
+    #reviewBox{
+        grid-column: 2/3;
+        grid-row:1/2;
+    }
+
+    #reviewHeading{
+        margin:0px;
+        padding:5px;
+    }
+
+    /* For vehicle display in classification view */
+	#inv-display {
+		flex-flow: row wrap;
+		justify-content: space-evenly;
+        /* justify-content: center; */
+	}
+
+	#inv-display h2{
+		font-size: 1rem;
+	}
+
+	#inv-display li {
+		max-width: 200px;
+		flex: 1 0 auto;
+		text-align: center;
+		height: 250px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+
+	}
+    #inv-display a{
+        padding:0px;
+    }
+      
+	#inv-display div {
+		width: 100%;
+	}
+
+    #vehicleDisplayBox{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #vehicleImageBox{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #vehicleDetailsBox{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    /* #vehicleInfoBox{
+        grid-column: 2/4;
+        grid-row: 2/3;
+    } */
+
+
+
+    #vehicleImageBox img {
+        width: 450px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    #actionPicBox{
+        left:240px;
+    }
+
+    #welcomeBoxInfo{
+        left:250px;
+    }
+}
+
