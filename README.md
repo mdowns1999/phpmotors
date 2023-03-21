@@ -13,4 +13,4 @@ No special libraires were used in this project that are worth mentioning.  The l
 * [Php Documentation ](https://www.php.net/docs.php)
 
 # Future Work
-* Fix Add Vehicles page to make it add new images
+* Fix Add Vehicles page to make it add new images 
