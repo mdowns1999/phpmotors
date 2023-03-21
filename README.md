@@ -1,7 +1,7 @@
 # PhpMotors Overview
 Welcome to Phpmotors!  This program is a website that practices using a relational database and PHP.  The website follows a model, view, and control system.  The model handles everything relatied to the database, the controllers handle what kind of actions or routes need to be take, and the view is what the client sees and interacts with.
 
-[Chess Demo Video](http://youtube.link.goes.here)
+[PhpMotors Demo Video](http://youtu.be/fZ7rJ0X4RGo?hd=1)
 
 # Development Environment
 
@@ -10,7 +10,7 @@ No special libraires were used in this project that are worth mentioning.  The l
 
 # Useful Websites
 * [W3 Schools ](https://www.w3schools.com/php/)
-*[Php Documentation](https://www.php.net/docs.php)
+* [Php Documentation ](https://www.php.net/docs.php)
 
 # Future Work
 * Fix Add Vehicles page to make it add new images
